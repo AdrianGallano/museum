@@ -111,6 +111,27 @@ body{
     color: var(--color-2);
 }
 
+.btn-head{
+    margin: 1em 0;
+    margin-right: 5em;
+    padding: .5em 2em;
+    align-self: flex-end;
+    background-color: var(--color-4);
+    border: none;
+    font-weight: 500;
+}
+
+.btn-head:hover{
+    background-color: var(--color-4);
+    opacity: .7;
+    cursor: pointer;
+}
+
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 /* Gallery */
 .gallery{
     display: flex;
@@ -132,8 +153,6 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
 }
-
-
 
 .gallery-img{
     position: relative;

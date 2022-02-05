@@ -1,9 +1,9 @@
 let speed = 100;
 let text;
 let i = 0;
+let btn = document.getElementsByClassName("btn-head")[0]
+btn.addEventListener('click', getVisitorName)
 
-setTimeout(getVisitorName(), 50)
-setTimeout(typeWriter(), 50)
 
 window.addEventListener("keydown", (e) => {
     if(e.keyCode == 9){
@@ -22,6 +22,7 @@ async function getVisitorName(){
     }else{
         text = visitorName.toUpperCase()[0] + visitorName.slice(1);
     }
+    typeWriter()
 };
 
 async function typeWriter(){
