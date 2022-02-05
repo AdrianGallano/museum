@@ -2,8 +2,8 @@ let speed = 100;
 let text;
 let i = 0;
 
-setTimeout(getVisitorName(), 200000)
-setTimeout(typeWriter(), 200000)
+setTimeout(getVisitorName(), 50)
+setTimeout(typeWriter(), 50)
 
 window.addEventListener("keydown", (e) => {
     if(e.keyCode == 9){
