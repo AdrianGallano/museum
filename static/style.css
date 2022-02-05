@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* General */
+
 :root{
     --background-color: #262626;
+    --background-color2: #f2f2f2;
     --color-1: #F04B65;
     --color-2: #CCECF8;
     --color-3: #aa2186;
@@ -25,17 +28,16 @@ body{
     font-family: 'Source Code Pro', monospace;
 }
 
-main{
-    padding: 0 10em;
-}
+
+/* Navigation */
 
 .navigation{
     display: flex;
-    margin: 0 10em;
+    margin: 0 9.5em;
     height: 10vh;
     align-items: center;
     justify-content: space-between;
-    padding: .5em;
+    padding: .5em 0;
 }
 
 .nav-menu{
@@ -55,13 +57,7 @@ main{
 .nav-link:hover{
     color: var(--color-2)
 }
-/* IGNORE UP */
-/* IGNORE UP */
-/* IGNORE UP */
-/* IGNORE UP */
-/* IGNORE UP */
-/* IGNORE UP */
-/* IGNORE UP */
+
 .press-tab{
     display: inline;
     bottom: 200px;
@@ -73,6 +69,7 @@ main{
     background-color: var(--color-2);
 }
 
+/* Header */
 
 .home-head{
     display: flex;
@@ -80,12 +77,13 @@ main{
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 0 9.5em;
 }
 
 .head-content{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 0 auto;
     height: 50vh;
     color: var(--color-4);
 }
@@ -106,10 +104,40 @@ main{
 }
 
 .header-title{
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .header-para{
     color: var(--color-2);
 }
 
+/* Gallery */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: 100vh;
+    background-color: var(--background-color2);
+    color: var(--background-color);
+    padding: 2em 9.5em;
+}
+
+.gallery-title{
+    font-size: 5rem;
+}
+
+.gallery-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+.gallery-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

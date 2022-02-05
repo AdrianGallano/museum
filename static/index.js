@@ -2,8 +2,8 @@ let speed = 100;
 let text;
 let i = 0;
 
-setTimeout(getVisitorName(), 200000)
-setTimeout(typeWriter(), 200000)
+// setTimeout(getVisitorName(), 200000)
+// setTimeout(typeWriter(), 200000)
 
 window.addEventListener("keydown", (e) => {
     if(e.keyCode == 9){
@@ -31,3 +31,6 @@ async function typeWriter(){
         setTimeout(typeWriter, speed);
     }
 }
+
+
+// HEADER DONE
