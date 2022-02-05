@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --color-1: #343A40;
-    --color-2: #E1E8EB;
-    --color-3: #FFC107;
-    --color-4: #7952B3;
+    --background-color: #262626;
+    --color-1: #F04B65;
+    --color-2: #CCECF8;
+    --color-3: #aa2186;
+    --color-4: #4CB8DC;
+    --color-5: #EAA91E;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -13,8 +19,91 @@
 }
 
 body{
-    background-color: var(--color-1);
-    color: var(--color-3);
+
+    background-color: var(--background-color);
+    color: var(--color-5);
     font-family: 'Source Code Pro', monospace;
-    margin: 0 15em;
 }
+
+main{
+    margin: 0 10em;
+}
+
+.navigation{
+    display: flex;
+    margin: 0 10em;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    letter-spacing: 3px;
+}
+
+.nav-link{
+    text-decoration:none;
+    font-weight: 700;
+    color: var(--color-5);
+    font-size: smaller;
+}
+
+.nav-link:hover{
+    color: var(--color-2)
+}
+/* IGNORE UP */
+/* IGNORE UP */
+/* IGNORE UP */
+/* IGNORE UP */
+/* IGNORE UP */
+/* IGNORE UP */
+/* IGNORE UP */
+.press-tab{
+    display: inline;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.tabs{
+    display: inline;
+}
+
+
+.home-head{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-content{
+    display: flex;
+    flex: 1;
+    height: 50vh;
+    color: var(--color-4);
+    justify-content: center;
+}
+
+.head-content.img{
+    align-items: center;
+}
+
+.head-image{
+    position: fixed;
+    border-radius: 10px;
+}
+
+.header-title{
+    font-size: 3em;
+}
+
+.header-para{
+    color: var(--color-2);
+}
+
