@@ -25,9 +25,8 @@ async function getVisitorName(){
 };
 
 async function typeWriter(){
-    console.log(text)   
     if(i < text.length){
-        document.getElementsByClassName("welcome-text")[0].textContent += text[i]
+        document.querySelectorAll(".welcome-text > p")[1].textContent += text[i]
         i++;
         setTimeout(typeWriter, speed);
     }

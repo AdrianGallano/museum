@@ -70,7 +70,7 @@ main{
 
 .tabs{
     display: none;
-    /* background-color: var(--color-2); */
+    background-color: var(--color-2);
 }
 
 
