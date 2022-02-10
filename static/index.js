@@ -1,7 +1,7 @@
 let speed = 100;
 let text;
-let i = 0;
 let btn = document.getElementsByClassName("btn-head")[0]
+let welcomeText = document.querySelectorAll(".welcome-text > p")[1]
 btn.addEventListener('click', getVisitorName)
 
 
@@ -22,14 +22,17 @@ async function getVisitorName(){
     }else{
         text = visitorName.toUpperCase()[0] + visitorName.slice(1);
     }
-    typeWriter()
+    
+    welcomeText.textContent = "> Hello, "
+    let i = 0;
+    typeWriter(i)
 };
 
-async function typeWriter(){
+async function typeWriter(i){
     if(i < text.length){
-        document.querySelectorAll(".welcome-text > p")[1].textContent += text[i]
+        welcomeText.textContent += text[i]
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(typeWriter(i), speed);
     }
 }
 
